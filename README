@@ -1,1 +1,25 @@
+What was the problem you were solving in the projects for this course?
+For this project we were given the problem of sorting the courses given to us in alphanumeric order as well as taking note of the prerequisites that each course has
+with that we are prompted to be able to print out a sample schedule that a student may have while attending at the college, 
+we also required to allow someone to choose a course and learn the prerequisites of the given course.
 
+How did you approach the problem? Consider why data structures are important to understand.
+Given this requirement i had origionally tried using a hashtable although it wasnt a very smart solution as i didnt offer any sorting logic so i had brute forced it with 
+changing my text document to already be in order, to get around this issue i remade my original solution from a hash table to be a binary search tree, this not only
+let me solve my issue of being able to sort the data i am given regardless of the size of it unlike a hash table.
+
+How did you overcome any roadblocks you encountered while going through the activities or project?
+As I said in the part above i had a major road block with my original solution as it was pretty bad in solving one of the key issues, but when it came to solving issues
+I would try to make the code as best as i could, in this project i had alot to pull on as we are using code similar to things we have already done in previous assignments
+but in a given situation where i am completely stumpted i will try and see if there is a solution online without just looking up the straight forward answer to the project
+instead the solution for my specific issue rather than the whole assignment, another tool that has made it more effective for me to learn how to code better is to
+message my professor in a situation where i could find no good solutions.
+
+How has your work on this project expanded your approach to designing software and developing programs?
+With this project alone I hit a big brick wall as I tried using a more simple solution such as my hash table solution but as i tried to fix this solution i used the
+binary search tree a much more advanced solution, with that my original knowledge of data structures I could never have made something this advanced, my original 
+knowledge would barely even be able to store simple data from a file in a vector.
+
+How has your work on this project evolved the way you write programs that are maintainable, readable, and adaptable?
+This project and the assingments in this class has expanded my data storage skills and made my code a simplier and more readable which can in case alot more than the basic lines 
+of code i thought i knew before starting this class, I personally didn't see how we would store such vast data or even be able to sort it.
