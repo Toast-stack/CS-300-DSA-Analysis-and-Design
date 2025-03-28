@@ -1,25 +1,64 @@
-What was the problem you were solving in the projects for this course?
-For this project we were given the problem of sorting the courses given to us in alphanumeric order as well as taking note of the prerequisites that each course has
-with that we are prompted to be able to print out a sample schedule that a student may have while attending at the college, 
-we also required to allow someone to choose a course and learn the prerequisites of the given course.
+# CS-300: Data Structures and Algorithms - Analysis and Design
 
-How did you approach the problem? Consider why data structures are important to understand.
-Given this requirement i had origionally tried using a hashtable although it wasnt a very smart solution as i didnt offer any sorting logic so i had brute forced it with 
-changing my text document to already be in order, to get around this issue i remade my original solution from a hash table to be a binary search tree, this not only
-let me solve my issue of being able to sort the data i am given regardless of the size of it unlike a hash table.
+## Project Overview
+This repository contains my coursework for **CS-300: Data Structures and Algorithms - Analysis and Design**. The primary objective of this project was to develop a system capable of:
 
-How did you overcome any roadblocks you encountered while going through the activities or project?
-As I said in the part above i had a major road block with my original solution as it was pretty bad in solving one of the key issues, but when it came to solving issues
-I would try to make the code as best as i could, in this project i had alot to pull on as we are using code similar to things we have already done in previous assignments
-but in a given situation where i am completely stumpted i will try and see if there is a solution online without just looking up the straight forward answer to the project
-instead the solution for my specific issue rather than the whole assignment, another tool that has made it more effective for me to learn how to code better is to
-message my professor in a situation where i could find no good solutions.
+- **Sorting courses alphanumerically**.
+- **Managing and displaying course prerequisites**.
+- **Generating a sample academic schedule for students**.
+- **Allowing users to select a course and view its prerequisites**.
 
-How has your work on this project expanded your approach to designing software and developing programs?
-With this project alone I hit a big brick wall as I tried using a more simple solution such as my hash table solution but as i tried to fix this solution i used the
-binary search tree a much more advanced solution, with that my original knowledge of data structures I could never have made something this advanced, my original 
-knowledge would barely even be able to store simple data from a file in a vector.
+---
 
-How has your work on this project evolved the way you write programs that are maintainable, readable, and adaptable?
-This project and the assingments in this class has expanded my data storage skills and made my code a simplier and more readable which can in case alot more than the basic lines 
-of code i thought i knew before starting this class, I personally didn't see how we would store such vast data or even be able to sort it.
+## Problem Statement
+The challenge was to design a program that efficiently organizes a list of college courses in alphanumeric order, accounts for their respective prerequisites, and provides functionalities for students to view and plan their academic schedules accordingly.
+
+---
+
+## Approach and Solution
+
+### Initial Strategy
+Initially, I implemented a **hash table** to store course information. While hash tables offer fast data retrieval, they lack inherent mechanisms for maintaining ordered data, which is crucial for tasks like sorting courses alphanumerically.
+
+### Challenges Faced
+The primary limitation of the hash table approach was its inability to maintain the required order of courses. To address this, I considered pre-sorting the input data manually, but this method was neither efficient nor scalable.
+
+### Revised Strategy: Implementing a Binary Search Tree (BST)
+To overcome the ordering issue, I transitioned to using a **Binary Search Tree (BST)**. BSTs are particularly suited for scenarios requiring dynamic data insertion and ordered traversal. In a BST:
+
+- Each node contains a course.
+- The left subtree holds courses that precede the parent node's course alphanumerically.
+- The right subtree contains courses that follow the parent node's course alphanumerically.
+
+This structure allowed for efficient insertion, deletion, and in-order traversal to retrieve courses in the desired sequence.
+
+---
+
+## Overcoming Challenges
+Transitioning from a hash table to a BST was a significant shift. However, leveraging concepts from previous assignments facilitated this change. In instances where I encountered obstacles:
+
+1. **Targeted Research:** I focused on specific issues rather than seeking complete solutions, ensuring a deeper understanding of the problem.
+2. **Consultation:** Engaging with my professor provided clarity and alternative perspectives, enhancing my problem-solving approach.
+
+---
+
+## Impact on Software Design and Development
+This project underscored the importance of selecting appropriate data structures based on problem requirements. Initially opting for a hash table highlighted the necessity of aligning data structures with desired functionalities. The shift to a BST not only resolved the ordering issue but also expanded my comprehension of:
+
+- **Data Organization:** Recognizing how different structures influence data storage and retrieval.
+- **Algorithm Efficiency:** Understanding the trade-offs between various data structures in terms of performance and scalability.
+
+---
+
+## Enhancing Code Maintainability and Readability
+The assignments and projects in this course have significantly improved my ability to write clean, maintainable code. By:
+
+- **Implementing structured data storage solutions:** I can now handle and manipulate extensive datasets effectively.
+- **Prioritizing code clarity:** My programs have become more readable, facilitating easier debugging and collaboration.
+
+This evolution reflects a transition from basic coding practices to more sophisticated, efficient methodologies.
+
+---
+
+## Conclusion
+This project was instrumental in deepening my understanding of data structures and their practical applications. The experience gained has equipped me with the skills to select and implement appropriate data structures, enhancing both the functionality and efficiency of software solutions.
