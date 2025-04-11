@@ -77,6 +77,9 @@ This project helped me refine my coding practices by focusing on:
 
 ---
 
+## License
+This project is licensed under the MIT License. You are free to use, modify, and distribute this software.
+
 ## Conclusion
 
 Through this project, I gained **valuable experience in selecting and implementing data structures** to optimize efficiency. The process of problem-solving, debugging, and refining my approach helped me build a deeper understanding of **software design and algorithm optimization**.
